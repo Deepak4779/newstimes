@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg background sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light">NewsTimes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" [routerLink]="['/']"
+                        [queryParams]="{q:'All',language:language}">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" [routerLink]="['/']"
+                        [queryParams]="{q:'Politics',language:language}">Politics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" [routerLink]="['/']"
+                        [queryParams]="{q:'Crime',language:language}">Crime</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" [routerLink]="['/']"
+                        [queryParams]="{q:'Education',language:language}">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" [routerLink]="['/']"
+                        [queryParams]="{q:'Entertainment',language:language}">Entertainment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" [routerLink]="['/']"
+                        [queryParams]="{q:'Science',language:language}">Science</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" [routerLink]="['/']"
+                        [queryParams]="{q:'Technology',language:language}">Technology</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Others
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" [routerLink]="['/']"
+                                [queryParams]="{q:'Sports',language:language}">Sports</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/']"
+                                [queryParams]="{q:'Cricket',language:language}">Cricket</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/']"
+                                [queryParams]="{q:'Olympics',language:language}">Olympics</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/']"
+                                [queryParams]="{q:'World',language:language}">World</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/']"
+                                [queryParams]="{q:'India',language:language}">India</a></li>
+                                <li><a class="dropdown-item" [routerLink]="['/']"
+                                    [queryParams]="{q:'space',language:language}">Space</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/']"
+                                [queryParams]="{q:'Jokes',language:language}">Jokes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Language
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" [routerLink]="['/']" [queryParams]="{q:q,language:'hi'}">Hindi</a>
+                        </li>
+                        <li><a class="dropdown-item" [routerLink]="['/']"
+                                [queryParams]="{q:q,language:'en'}">English</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search" (submit)="postSearch($event)">
+                <input class="form-control me-2" type="search" name="search" (change)="getInputData($event)" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>

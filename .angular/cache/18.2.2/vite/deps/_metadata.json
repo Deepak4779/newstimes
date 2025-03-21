@@ -1,0 +1,67 @@
+{
+  "hash": "9a937c84",
+  "configHash": "a2003c15",
+  "lockfileHash": "00af53b4",
+  "browserHash": "a0902b32",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "9eac5a8e",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "8cfbc123",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "250cac80",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "271099be",
+      "needsInterop": false
+    },
+    "@angular/platform-browser/animations/async": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/animations/async.mjs",
+      "file": "@angular_platform-browser_animations_async.js",
+      "fileHash": "cbacc5f3",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "9874bc3c",
+      "needsInterop": false
+    },
+    "ngx-infinite-scroll": {
+      "src": "../../../../../node_modules/ngx-infinite-scroll/fesm2022/ngx-infinite-scroll.mjs",
+      "file": "ngx-infinite-scroll.js",
+      "fileHash": "ec792379",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-C5544QOE": {
+      "file": "chunk-C5544QOE.js"
+    },
+    "chunk-D7QMGBJG": {
+      "file": "chunk-D7QMGBJG.js"
+    },
+    "browser-XZPL6YYQ": {
+      "file": "browser-XZPL6YYQ.js"
+    },
+    "chunk-YEOTC2M6": {
+      "file": "chunk-YEOTC2M6.js"
+    },
+    "chunk-CQPTQQOZ": {
+      "file": "chunk-CQPTQQOZ.js"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<h5 class="background text-light text-center p-2 my-1 ">{{q}} News Articles</h5>
+<div class="container-fluid my-2">
+    <div class="row" *ngIf="articles.length<totalResults" infiniteScroll (scrolled)="fetchMoreData()">
+        <div *ngFor="let items of articles" class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="card mb-3" >
+                <img *ngIf="items.urlToImage" src="{{items.urlToImage}}" height="150px" class="card-img-top" alt="...">
+                <img *ngIf="!items.urlToImage" src="/images/no_image.jpg" height="150px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{items.title}}</h5>
+                    <div class="source-date">
+                        <p>{{items.source.name}}</p>
+                        <p>{{items.publishedAt|date}}</p>
+                    </div>
+                    <p class="card-text">{{items.description}}</p>
+                    <a href={{items.url}} target="_blank" class="btn btn-primary w-100 background">Read Full Article</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
